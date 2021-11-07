@@ -1,0 +1,88 @@
+.faq{
+    margin: 100px 0;
+    .title-section{
+        text-align: center;
+    }
+    .accordion{
+        .accordion-item{
+           background: transparent;
+           border: none;
+           a {
+            background: linear-gradient(360deg, rgba(246,122,22,1) 0%, rgba(221,45,28,1) 100%);
+  
+            // text-shadow: 3px 4px 12.5px rgba(246,122,22,1);
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+             text-shadow:  0 1px 2px  rgba(246, 122, 22, 0.15),
+             0 2px 4px rgba(246, 122, 22, 0.15),
+             0 4px 8px rgba(246, 122, 22, 0.15);
+             &:hover{
+               
+                //   box-shadow: 0 0px 85px 0px rgb(246 122 22 / 25%);
+                   text-shadow: 0px -1px 13px #f67a16;
+                  
+                   border:none;
+             }
+        }
+                .accordion-header{
+                    background: transparent;
+                    .collapsed{
+                        border: 2px solid #636363;
+                        border-radius: 20px;
+                        background: transparent;
+                        h5{
+                            font-size: 32px;
+                            color: #636363;
+                            background: inherit;
+                            text-shadow: inherit;
+                            -webkit-text-fill-color:inherit;
+                            margin: 0;
+                            &::after{
+                                color: #636363;
+                            }
+                        }
+                        &::after{
+                            background-image: url("../../../images/Logos/plus.png")!important;
+                        }
+                    }
+                    button{
+                       background: transparent;
+                        margin: 30px 0 30px 0;
+                        &::after{
+                        background-image: url("../../../images/Logos/moin.png")!important;
+                        }
+                       
+                        &:focus{
+                            box-shadow: none;
+                        }                                          
+                    }
+                    
+                }
+                &:focus{
+                    box-shadow: -14px 8px 30px rgb(246 122 22 / 50%);
+                    }
+        }
+        .active{
+            background: rgb(34,34,34); /* Old browsers */
+            background: -moz-linear-gradient(top,  rgb(34,34,34) 0%, rgb(32,32,32) 22%, rgb(22,22,22) 49%, rgb(21,21,21) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgb(34,34,34) 0%,rgb(32,32,32) 22%,rgb(22,22,22) 49%,rgb(21,21,21) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgb(34,34,34) 0%,rgb(32,32,32) 22%,rgb(22,22,22) 49%,rgb(21,21,21) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#151515',GradientType=0 ); /* IE6-9 */
+            border-radius: 20px;
+            border:2px solid #f67a16;
+            box-shadow: 3px -1px 30px #f67a16;
+            button{
+                margin: 0px!important;
+            }
+           
+        }   
+        .not-active{
+            background: inherit;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .faq{
+        margin: 0;
+    }
+}

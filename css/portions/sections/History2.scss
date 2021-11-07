@@ -1,0 +1,30 @@
+.section-4{
+  padding: 100px 0;
+  //background-image:url("../../../Images/Backgrounds/History2-bg.png");
+  background-repeat: no-repeat;
+  background-size:cover ;
+  background-position: right;
+
+
+}
+.section-4 .title-section h2{
+  padding-bottom: 32px;
+}
+.section-4 .bloc-text{
+  margin-top: 100px;
+}
+.illustration{
+  float: right;
+  img{
+    max-width: 100%;
+  }
+  
+}
+@media screen and (max-width: 767px) {
+  .section-4{
+    padding: 0px;
+    .bloc-text{
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.section-3{
+    
+   
+    video{
+        position: sticky;
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+    .content-bloc{
+        padding: 50px 0;
+    }
+    
+  }
+  
+  
+  .section-3 .text-section h3{
+    font-size: 26px!important;
+    margin:25px 0;
+   
+  }
+  @media screen and (max-width: 767px) {
+    .section-3 video{
+      position: absolute;
+      top: inherit!important;
+      opacity: 0.3;
+    }
+    
+  }
