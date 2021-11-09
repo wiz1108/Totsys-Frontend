@@ -11313,8 +11313,8 @@ video.bg-video {
 
 @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../assets/img/bg-mobile-fallback.jpg") #2a5555 no-repeat center center scroll;
-    background-size: cover;
+    background: url("../../Images/Sliders/Wallpaper-totsys.jpg") #2a5555 no-repeat center center scroll;
+
   }
 
   body video {
