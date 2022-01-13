@@ -60,7 +60,7 @@ $(".navbarNav").toggleClass("displayblock");
 
     /*Faq*/
     $(".accordion-button").click(function () {
-      // If the clicked element has the active class, remove the active class from EVERY .nav-link>.state element
+      // If the clicked element has thfe active class, remove the active class from EVERY .nav-link>.state element
       if ($(this).parent().parent().hasClass("active")) {
         $(".accordionButtonActive").removeClass("active");
       }
